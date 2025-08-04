@@ -33,7 +33,6 @@ def preprocess_data(X: pd.DataFrame) -> tuple[pd.DataFrame, ColumnTransformer]:
     X_pre = pre.fit_transform(X)
     return X_pre, pre
 
-
 def evaluate_single_model(
     model: BaseEstimator,
     xtrain: pd.DataFrame,
